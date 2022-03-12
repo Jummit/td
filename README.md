@@ -63,9 +63,9 @@ If the selector is not a number or number range, it is compiled as a regex and m
 **Examples:**
 
 ```bash
-td show 20**-01-03
-td do *
-td done (garden|house)
+td show "20**-01-03"
+td do "*"
+td done "(garden|house)"
 ```
 
 ## Task Files
