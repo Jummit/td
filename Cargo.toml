@@ -1,6 +1,14 @@
 [package]
 name = "td"
 version = "0.1.0"
+authors = ["Jummit <jummit@web.de>"]
+license = "MIT"
+description = "A tiny, easy to use task organization command line program"
+readme = "README.md"
+homepage = "https://github.com/jummit/td"
+repository = "https://github.com/jummit/td"
+keywords = ["cli", "todo", "organization"]
+categories = ["command-line-utilities"]
 edition = "2021"
 
 [dependencies]
@@ -8,3 +16,7 @@ regex = "1.5.4"
 csv = "1.1.6"
 chrono = "0.4.19"
 directories = "4.0.1"
+
+[[bin]]
+name = "td"
+path = "src/main.rs"
