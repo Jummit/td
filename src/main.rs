@@ -208,7 +208,7 @@ impl Tasks {
 
     fn work_on(&mut self, task: usize) -> Result<(),TaskError> {
         if let Some(content) = self.tasks.get(task) {
-            println!("working on {}!", content);
+            println!("Working on {}!", content);
             let working = self.tasks.remove(task);
             self.tasks.insert(0, working);
             Ok(())
@@ -220,7 +220,7 @@ impl Tasks {
     fn complete(&mut self, num: usize) -> Result<(),TaskError> {
         if self.tasks.get(num).is_some() {
             let mut task = self.tasks.remove(num);
-            println!("completed {}!", task);
+            println!("Completed {}!", task);
             task.completed = Some(DateTime::from(Local::now()));
             self.tasks.push(task);
             Ok(())
