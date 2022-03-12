@@ -1,0 +1,10 @@
+[package]
+name = "td"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+regex = "1.5.4"
+csv = "1.1.6"
+chrono = "0.4.19"
+directories = "4.0.1"
